@@ -5,7 +5,7 @@ import Link from "next/link";
 import axios from "axios";
 import base_url from "../helper/helper";
 import { useRouter } from "next/navigation";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import { useAuth } from "../context/auth";
 
@@ -36,7 +36,7 @@ export default function Login() {
       const response = await axios.post(base_url + "/api/auth/login", formdata);
 
       if (response.data) {
-        toast.success("Registered successfully!", { position: "bottom-right" });
+        toast.success("Login successfully!", { position: "bottom-right" });
         setFormData({
           email: "",
           password: "",
@@ -66,6 +66,7 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex  justify-center bg-gray-100 px-4 pt-[20px]">
+      <ToastContainer position="top-right" autoClose={3000} />
       <div className="bg-white h-[400px] shadow-lg rounded-lg p-6 w-full max-w-md">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           <Link href={"/login"}>Login/</Link>

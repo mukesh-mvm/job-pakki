@@ -31,8 +31,7 @@ const Home = () => {
       
       <Header />
       <Navbar />
-      <h1 className=" text-2xl text-center font-bold py-[20px]">Find Your Dream Job – Government, IT, Bank & Private Jobs in India
-      Intro Content </h1>
+      <h1 className=" text-2xl text-center font-bold py-[20px]">Find Your Dream Job – Government, IT, Bank & Private Jobs in India</h1>
       {/* <div className="relative flex justify-center ">
             <input
               type="text"

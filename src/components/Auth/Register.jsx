@@ -5,7 +5,10 @@ import axios from "axios";
 import base_url from "../helper/helper";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 import { useRouter } from "next/navigation";
+import { message } from 'antd';
+import 'antd/dist/reset.css';
 export default function Register() {
   const [loading, setLoading] = useState(false);
   const [err, setError] = useState(false);
@@ -43,7 +46,8 @@ export default function Register() {
       );
 
       if (response.data) {
-        toast.success("Registered successfully!", { position: "bottom-right" });
+        // toast.success("Registered successfully!", { position: "bottom-right" });
+        message.success("Register successfully. Please check your email for verification.");
         setFormData({
           name: "",
           email: "",
@@ -56,6 +60,7 @@ export default function Register() {
         setError(false);
         router.push("/login");
       }
+
     } catch (error) {
       toast.error(error.response?.data?.message || "Registration failed!", {
         position: "bottom-right",

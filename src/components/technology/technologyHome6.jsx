@@ -59,6 +59,63 @@ const technologyHome6 = ({ title }) => {
     ],
     Software_testing: [
       {
+        title: "Insurance Operations New Associate",
+        company: "Accenture",
+        logo: "/images/b6.gif",
+        salary: "Not Disclosed",
+        profile: "Full Time",
+        link:"#"
+        // link: "https://www.accenture.com/in-en/careers/jobdetails?id=AIOC-S01571065_en&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+      },
+      {
+        title: "Senior Reginal Insurance Manager",
+        company: "IDFC First Bank",
+        logo: "/images/b4.png",
+        salary: "Not Disclosed",
+        profile: "Full Time",
+        link:"#"
+        // link : "https://careers.idfcfirstbank.com/in/en/job/P-100632/Senior-Regional-Insurance-Manager?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+      },
+
+      {
+        title: "GN Insurance Manager",
+        company: "Accenture",
+        logo: "/images/b6.gif",
+        salary: "Not Disclosed",
+        profile: "Full Time",
+        link:"#"
+       //link : "https://www.accenture.com/in-en/careers/jobdetails?id=R00257567_en&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+      },
+
+      {
+        title: "Associate (Insurance / Banking)",
+        company: "Bain And Company",
+        logo: "/images/b7.png",
+        salary: "Not Disclosed",
+        profile: "Full Time",
+        link:"#"
+        // link: "https://www.bain.com/careers/find-a-role/position/?jobid=90399&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+      },
+
+      {
+        title: "Sales Executive - Insurance",
+        company: "RGF HR Agent",
+        logo: "/images/b8.png",
+        salary: "60000-70000 Per Month",
+        profile: "Full Time",
+        link:"#"
+         // link : "https://www.rgf-hragent.asia/en/india/sales-executive-insurance-SDG-95025?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+      },
+
+
+
+
+
+
+
+
+      // ////////////////////////////////////
+      {
         title: "Insurance Officer",
         company: "TATA AIA Life Insurance",
         logo: "https://tse2.mm.bing.net/th?id=OIP.YHdN9Q1cXzgTngDXUIIxpQAAAA&pid=Api&P=0&h=180",

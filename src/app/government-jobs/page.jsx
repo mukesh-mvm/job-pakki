@@ -12,7 +12,22 @@ export const metadata = {
 }
 const page = () => {
 
-  
+    const para = [
+       {
+        id:1,
+        title:"Stay updated on the latest government job opportunities in India for 2025. We provide accurate and timely updates on vacancies across government departments and organizations."
+       },
+
+       {
+        id:2,
+        title:"Explore jobs in defense sectors like the Indian Army, Air Force, Navy, Agniveer Yojna, Coast Guard, ITBP, CISF, and BSF. Additionally, find roles in police departments such as Delhi Police, Uttar Pradesh Police, Bihar Police, Karnataka Police, and others."
+       },
+
+       {
+        id:3,
+        title:"We also bring you updates on ministries like Railways, Finance, and Home, along with state government jobs like teaching, PWD, and nursing. Check our job listings for detailed descriptions and direct application links."
+       },
+    ]
   
 
 
@@ -20,7 +35,7 @@ const page = () => {
     <div>
 
 
-      <TechnologyHome5 title={"Find Latest Government Jobs in India 2025"} />
+      <TechnologyHome5 title={"Find Latest Government Jobs in India 2025"} para={para}/>
     </div>
   );
 };

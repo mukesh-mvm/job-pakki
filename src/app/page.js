@@ -38,7 +38,7 @@ export const metadata = {
         "@type": "ContactPoint",
         "email": "contact@jobkityaari.com",
         "contactType": "customer service",
-        "availableLanguage": ["English", "Hindi"]
+        "availableLanguage": ["English"]
       }
     }),
   }

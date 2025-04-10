@@ -1,9 +1,14 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import JobCarousel from "./JobCarousel";
 import Header from "../header/Header";
 import Navbar from "../header/Navbar";
 import Head from "next/head";
-const TechnologyHome1 = ({ title }) => {
+const TechnologyHome1 = ({ title ,para}) => {
+  const [showAll, setShowAll] = useState(false);
+    const handleToggle = () => {
+      setShowAll((prev) => !prev);
+    };
   const jobsData = {
     software: [
       {
@@ -64,8 +69,119 @@ const TechnologyHome1 = ({ title }) => {
         // link: "https://cutshort.io/job/Frontend-Developer-Immediate-Joiner-Noida-NCR-Delhi-Gurgaon-Noida-Crescerance-oIzYGwU2?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
       link:"https://careers.oracle.com/jobs/#en/sites/jobsearch/jobs/preview/279352/?keyword=Software+Engineer&latitude=28.6040046&location=Noida%2C+UP%2C+India&longitude=77.3597082&mode=geolocation&radius=25&radiusUnit=MI"
       },
+
+
+      {
+        title: "Associate Support Engineer",
+        company: "Greenway Health",
+        logo: "/images/Ns3.png",
+        salary: "Not Disclosed",
+        profile: "Full time",
+        // link: "https://cutshort.io/job/Frontend-Developer-Immediate-Joiner-Noida-NCR-Delhi-Gurgaon-Noida-Crescerance-oIzYGwU2?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      link:"https://recruit.hirebridge.com/v3/careercenter/v2/details.aspx?jid=600975&cid=6709&locvalue=1174&src=linkedin"
+      },
+
+
+      {
+        title: "Web Developer Trainee",
+        company: "AERIS ",
+        logo: "/images/Ns4.png",
+        salary: "Not Disclosed",
+        profile: "Full time",
+        // link: "https://cutshort.io/job/Frontend-Developer-Immediate-Joiner-Noida-NCR-Delhi-Gurgaon-Noida-Crescerance-oIzYGwU2?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      link:"https://aeriestechnology.talentrecruit.com/Search/Jobs/?1997"
+      },
+
+
+      {
+        title: "Software Engineer",
+        company: "Microsoft",
+        logo: "/images/Ns5.png",
+        salary: "Not Disclosed",
+        profile: "Full time",
+        // link: "https://cutshort.io/job/Frontend-Developer-Immediate-Joiner-Noida-NCR-Delhi-Gurgaon-Noida-Crescerance-oIzYGwU2?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      link:"https://jobs.careers.microsoft.com/global/en/job/1816158"
+      },
+
+
+      {
+        title: "API Engineer ",
+        company: "Synchrony",
+        logo: "/images/Ns6.png",
+        salary: "Not Disclosed",
+        profile: "Full time",
+        // link: "https://cutshort.io/job/Frontend-Developer-Immediate-Joiner-Noida-NCR-Delhi-Gurgaon-Noida-Crescerance-oIzYGwU2?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      link:"https://www.synchronycareers.com/job-not-found/?jobid=21420537"
+      },
+
+
+      {
+        title: "Firmware Engineer Intern",
+        company: "Park+",
+        logo: "/images/Ns7.png",
+        salary: "Not Disclosed",
+        profile: "Full time",
+        // link: "https://cutshort.io/job/Frontend-Developer-Immediate-Joiner-Noida-NCR-Delhi-Gurgaon-Noida-Crescerance-oIzYGwU2?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      link:"https://docs.google.com/forms/d/e/1FAIpQLSeTxe_vRe7Teo_CIf_KB5cmwewViZkAc6CN0H2E9i9_ni7WVg/viewform"
+      },
+
+
+      {
+        title: "Research Intern",
+        company: "Ericsson+",
+        logo: "/images/Ns8.png",
+        salary: "Not Disclosed",
+        profile: "Internship",
+        // link: "https://cutshort.io/job/Frontend-Developer-Immediate-Joiner-Noida-NCR-Delhi-Gurgaon-Noida-Crescerance-oIzYGwU2?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      link:"https://jobs.ericsson.com/careers/job/563121763876748?domain=ericsson.com&jobPipeline=LinkedIn"
+      },
+
+
+      {
+        title: "IBM Internship",
+        company: "IBM",
+        logo: "/images/Ns9.png",
+        salary: "Not Disclosed",
+        profile: "Internship",
+        // link: "https://cutshort.io/job/Frontend-Developer-Immediate-Joiner-Noida-NCR-Delhi-Gurgaon-Noida-Crescerance-oIzYGwU2?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      link:"https://ibmglobal.avature.net/en_US/careers/JobDetail?jobId=25851&source=WEB_Search_INDIA"
+      },
+
+
+      
+    {
+      title: "Associate Support Engineer",
+      company: "Edifecs",
+      logo: "/images/Ns1.png",
+      salary: "Not Disclosed",
+      profile: "Full Time",
+      link:"https://jobs.jobvite.com/edifecs/job/oJdEvfwP?jvst=Job%2520Board"
+      // link: "https://www.naukri.com/job-listings-finance-manager-gunnebo-entrance-control-gurugram-7-to-12-years-110325014453?src=seo_srp&sid=17418524573953137_1&xp=12&px=2",
+    },
+
+
+    {
+      title: "Software Engineer",
+      company: "Confluent ",
+      logo: "/images/Ns2.png",
+      salary: "Not Disclosed",
+      profile: "Full Time",
+      link:"https://www.amazonconservation.org/take-action/donate/?did=10665&cid=a7f973a0-bdc5-4add-5589-3e85019be1c7&ezoic=ezoic"
+      // link: "https://www.naukri.com/job-listings-finance-manager-gunnebo-entrance-control-gurugram-7-to-12-years-110325014453?src=seo_srp&sid=17418524573953137_1&xp=12&px=2",
+    },
+
     ],
     Software_testing: [
+
+      {
+        title: "Junior QA & Tech Support Engineer",
+        company: "Milliman",
+        logo: "/images/Ns10.png",
+        salary: "Not Disclosed",
+        profile: "Full Time",
+        // link: "https://cutshort.io/job/Frontend-Developer-Immediate-Joiner-Noida-NCR-Delhi-Gurgaon-Noida-Crescerance-oIzYGwU2?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      link:"https://recruiting2.ultipro.com/MIL1017/JobBoard/f54234e9-dfde-b183-fd20-4fbdb19cba7a/OpportunityDetail?opportunityId=c48e0173-0818-4a9f-809b-cb300228d644&source=LinkedIn"
+      },
       {
         title: "Software Test Analysis Senior",
         company: "FIS",
@@ -166,6 +282,17 @@ const TechnologyHome1 = ({ title }) => {
 
     AI_ML: [
       {
+        title: "ML Intern",
+        company: "Tower Research Capital",
+        logo: "/images/Ns11.png",
+        salary: "Not Disclosed",
+        profile: "Internship",
+        // link: "https://cutshort.io/job/Frontend-Developer-Immediate-Joiner-Noida-NCR-Delhi-Gurgaon-Noida-Crescerance-oIzYGwU2?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      link:"https://boards.greenhouse.io/embed/job_app?token=6114125"
+      },
+
+
+      {
         title: "Head AI/ ML",
         company: "RGF Professional Recruitment",
         logo: "/images/h6.png",
@@ -214,31 +341,124 @@ const TechnologyHome1 = ({ title }) => {
     ],
   };
 
+  const data1 = [
+    {
+      id:1,
+      title:"This page lists all software development jobs in India and abroad. We feature opportunities in companies like Infosys, TCS, Accenture, HCL, Tech Mahindra, Wipro, Microsoft, Amazon, Flipkart, and Google."
+    },
+    {
+      id:2,
+      title:"Jobs are available for both freshers and experienced candidates with specializations in AI/ML, SAP, Salesforce, Data Science, DevOps, Cybersecurity, and Cloud Computing."
+    },
+    {
+      id:3,
+      title:"Roles for developers with skills like PHP, Node.js, React.js, Express.js, Java, CSS, Ruby, Django, Angular, and HTML are also covered."
+    },
+    {
+      id:4,
+      title:"We ensure all the latest software developer jobs are posted here. Visit this page for up-to-date information and take the next step in your tech career."
+    }
+  ]
+
+
+  const data2 = [
+    {
+      id:1,
+      title:"This page shares software testing jobs in India and abroad. Software testing is a critical function in the development process, and these roles are highly valued."
+    },
+    {
+      id:2,
+      title:"We cover jobs in companies like Infosys, TCS, Accenture, HCL, Tech Mahindra, Wipro, Microsoft, Amazon, Flipkart, and Google."
+    },
+    {
+      id:3,
+      title:"Opportunities for freshers and experienced candidates include Manual Testing and Automation Testing roles such as Test Analyst, Test Engineer, Test Manager, and Automation Tester."
+    },
+    {
+      id:4,
+      title:"Regular updates on the latest tools and trends in software testing are shared here. Keep visiting to find your ideal testing job."
+    }
+  ]
+
+
+  const data3 = [
+    {
+      id:1,
+      title:"This page features project management job openings in India and abroad. These roles are crucial in overseeing software development projects and ensuring timely delivery."
+    },
+    {
+      id:2,
+      title:"We list opportunities in companies like Amazon, Google, CISCO, Ericsson, Cognizant, Capgemini, IBM, Oracle, and Salesforce."
+    },
+    {
+      id:3,
+      title:"Both freshers and experienced candidates can find jobs like Project Manager, Project Sponsor, Business Analyst, Resource Manager, and Project Coordinator."
+    },
+    {
+      id:4,
+      title:"Check this page regularly for updates on project management trends, tools, and the latest job openings to advance your career."
+    }
+  ]
+
+
+  const data4 = [
+    {
+      id:1,
+      title:"Explore job openings for Artificial Intelligence (AI) and Machine Learning (ML) roles in India. AI and ML are in high demand, transforming industries through automation."
+    },
+    {
+      id:2,
+      title:"We post jobs in top companies like IBM, Amazon, Microsoft, Bosch, Facebook, and Myntra. Popular roles include Data Scientist, Machine Learning Engineer, AI Engineer, AI Product Manager, and AI/ML Consultant."
+    },
+    {
+      id:3,
+      title:"Stay updated on the latest trends, tools, and AI & ML job openings by visiting this page regularly. Your next career opportunity is just a click away."
+    },
+    
+  ]
+
   return (
     <div>
       <Header />
       <Navbar />
 
       <h1 className=" text-2xl font-bold text-center mb-2 pt-8">{title}</h1>
+      <div className=" w-[90%] mx-auto">
+       {(showAll ? para : [para[0]]).map((item, index) => (
+        <p key={index} className="text-xl text-black mb-4">
+          {item.title}
+        </p>
+      ))}
+
+      <button
+        onClick={handleToggle}
+        className="text-blue-600 underline mt-2"
+      >
+        {showAll ? "Read Less" : "Read More"}
+      </button>
+    </div>
       <JobCarousel
         jobs={jobsData?.software}
         title={"Software Developer Jobs 2025 – Freshers & Experienced"}
         color={"blue"}
+        data={data1}
       />
 
       <JobCarousel
         jobs={jobsData?.Software_testing}
         title={"Software Testing Jobs (Manual & Automation) 2025"}
         color={"green"}
+        data={data2}
       />
 
       <JobCarousel
         jobs={jobsData?.Project_Management}
         title={"Project Management Jobs 2025 – IT & Tech Sector"}
         color={"orange"}
+        data={data3}
       />
 
-      <JobCarousel jobs={jobsData?.AI_ML} title={"AI & ML Jobs in India 2025 – High-Paying Roles"} color={"purple"} />
+      <JobCarousel jobs={jobsData?.AI_ML} title={"AI & ML Jobs in India 2025 – High-Paying Roles"} color={"purple"} data={data4}/>
     </div>
   );
 };

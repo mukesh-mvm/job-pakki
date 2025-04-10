@@ -23,7 +23,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-blue-600">
-            <img src="/images/logo2.png" alt="" style={{width:"100px"}} />
+            <img src="/images/logo2.png" alt="jobkitayaari logo" style={{width:"100px"}} />
         </Link>
 
         {/* Desktop Navigation */}
@@ -85,6 +85,9 @@ const Header = () => {
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
+
+
+
 
       {/* Mobile Menu */}
       {isOpen && (

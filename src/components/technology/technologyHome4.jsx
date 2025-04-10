@@ -56,6 +56,27 @@ const technologyHome4 = ({ title }) => {
       },
     ],
     Sales: [
+
+      {
+        title: "Sales intern",
+        company: "proeffico",
+        logo: "/images/b12.png",
+        salary: "Not Disclosed",
+        profile: "Full Time",
+        // link: "https://img.naukimg.com/logo_images/groups/v1/10096884.gif",
+      link:"https://proeffico.com/career/"
+      },
+
+
+      {
+        title: "Sales Executive",
+        company: "hirayarealty",
+        logo: "/images/b11.png",
+        salary: "Not Disclosed",
+        profile: "Full Time",
+        // link: "https://img.naukimg.com/logo_images/groups/v1/10096884.gif",
+      link:"https://www.hirayarealty.com/jobs/sales-executive"
+      },
       {
         title: "Associate Sales Consultant",
         company: "PolicyBazaar",
@@ -156,6 +177,30 @@ const technologyHome4 = ({ title }) => {
     ],
 
     business: [
+
+      
+
+      {
+        title: "Process Associate",
+        company: "Notus Services Pvt Ltd",
+        logo: "/images/b10.png",
+        salary: "Not Disclosed",
+        profile: "Full Time",
+       link:"https://genpact.taleo.net/careersection/sgy_external_career_section/jobdetail.ftl?job=CPG057456&tz=GMT-05%3A00&tzname=America%2FChicago"
+        // link: "https://www.glassdoor.co.in/job-listing/business-sales-activation-lead-google-JV_IC2921225_KO0,30_KE31,37.htm?jl=1009670798749&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      },
+    
+      {
+        title: "Business Developer (Fresher)",
+        company: "RoadCast",
+        logo: "/images/b9.png",
+        salary: "Not Disclosed",
+        profile: "Full Time",
+       link:"https://roadcast.in/hiring"
+        // link: "https://www.glassdoor.co.in/job-listing/business-sales-activation-lead-google-JV_IC2921225_KO0,30_KE31,37.htm?jl=1009670798749&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      },
+
+
       {
         title: "Business Development Manager",
         company: "Thermo Fisher Scientific",

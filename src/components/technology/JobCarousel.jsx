@@ -5,9 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Import icons
 import JobCard from "./JobCard"; // Ensure JobCard is correctly imported
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
-const JobCarousel = ({ jobs, title, color }) => {
+const JobCarousel = ({ jobs, title, color,data }) => {
+
+  const [showAll, setShowAll] = useState(false);
+    const handleToggle = () => {
+      setShowAll((prev) => !prev);
+    };
+
+
   const sliderRef = useRef(null); // Create a reference for the slider
 
   const settings = {
@@ -49,6 +56,27 @@ const JobCarousel = ({ jobs, title, color }) => {
         >
           {title}
         </h2>
+
+
+{
+  data?(<>
+   <div className=" w-[60%] mx-auto flex flex-col ">
+       {(showAll ? data : [data[0]]).map((item, index) => (
+        <p key={index} className="text-xl text-black mb-4 text-justify">
+          {item.title}
+        </p>
+      ))}
+
+      <button
+        onClick={handleToggle}
+        className="text-blue-600 underline mt-2 "
+      >
+        {showAll ? "Read Less" : "Read More"}
+      </button>
+    </div>
+  </>):""
+}
+       
 
         {/* Left Button (Outside the carousel) */}
         <button
