@@ -19,12 +19,12 @@ export default function Footer() {
           </div>
            
 
-           <p> <span className=" text-white  font-bold">📍 Address:</span> 1028, 10th Floor, Tower A, IThum I.T. Park, Sector 62, Noida</p>
+           <p> <span className=" text-white  font-bold"> Address:</span> IThum I.T. Park, Sector 62, Noida</p>
          
             <p> <span className=" text-white  font-bold">📧 Email:</span> contact@jobkityaari.com</p>
            
-           <p><span className=" text-white  font-bold">📞 Phone:</span> <br/> +91 9811868368
-           </p>
+           {/* <p><span className=" text-white  font-bold">📞 📍 Phone:</span> <br/> +91 9811868368
+           </p> */}
           
           
         </div>

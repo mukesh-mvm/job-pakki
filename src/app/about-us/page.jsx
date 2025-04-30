@@ -12,6 +12,11 @@ export const metadata = {
     canonical: './',
   },
 
+  robots: {
+    index: false, // Disables indexing
+    follow: false, // Prevents following links
+  },
+
 }
 
 export const page = () => {

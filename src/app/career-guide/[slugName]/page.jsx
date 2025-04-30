@@ -1,6 +1,20 @@
 import Article from "@/components/Article/Article"
 
 
+export const metadata = {
+  title: 'About Us | Job Ki Tyaari - Your Career Guide',
+  description: 'Job Ki Tyaari’s mission to help job seekers with career tips, exam updates, and study materials. Learn more about us',
+  metadataBase: new URL('https://jobkityaari.com'),
+  alternates: {
+    canonical: './',
+  },
+   
+  robots: {
+    index: false, // Disables indexing
+    follow: false, // Prevents following links
+  },
+
+}
 export async function generateStaticParams() {
     return [{ slugName: "Heading-1" }, { slugName: "Heading-2" },{ slugName: "Heading-3" },{ slugName: "Heading-4" },{ slugName: "Heading-5" },{ slugName: "Heading-6" },{ slugName: "Heading-7" }];
   }

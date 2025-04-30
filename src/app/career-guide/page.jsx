@@ -9,6 +9,11 @@ export const metadata = {
   alternates: {
     canonical: './',
   },
+
+  robots: {
+    index: false, // Disables indexing
+    follow: false, // Prevents following links
+  },
 }
 
 

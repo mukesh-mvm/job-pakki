@@ -32,7 +32,7 @@ const technologyHome5 = ({ title,para }) => {
         salary: "37,000 – 42,000",
         profile: "Full time",
         // link: "https://www.naukri.com/job-listings-software-developer-capline-services-noida-1-to-3-years-210225016648?src=seo_srp&sid=17417682183862455_1&xp=1&px=2",
-         link:"https://docs.google.com/spreadsheets/u/5/d/1YfSknOCHLNWSHwqUAouwGlVvxOF3Ivlexe13Tv8WMHs/edit"
+         link:"https://ada.gov.in/adv_130/Registration"
       },
 
       {

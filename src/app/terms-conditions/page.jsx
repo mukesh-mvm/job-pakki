@@ -8,6 +8,12 @@ export const metadata = {
     canonical: './',
   },
 
+  
+  robots: {
+    index: false, // Disables indexing
+    follow: false, // Prevents following links
+  },
+
 }
 const page = () => {
   return (
